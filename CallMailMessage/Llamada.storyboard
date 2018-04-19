@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LUu-Sz-QBK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Llamada View Controller-->
+        <scene sceneID="smV-LV-HTZ">
+            <objects>
+                <viewController id="LUu-Sz-QBK" customClass="LlamadaViewController" customModule="CallMailMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMn-Ty-eWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-XT-h2C">
+                                <rect key="frame" x="16" y="105" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-vf-HuY">
+                                <rect key="frame" x="16" y="179" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="llamar"/>
+                                <connections>
+                                    <action selector="llamar:" destination="LUu-Sz-QBK" eventType="touchUpInside" id="HCQ-yJ-C15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d3h-XT-h2C" firstAttribute="trailing" secondItem="Zo2-vf-HuY" secondAttribute="trailing" id="3cg-nq-0pS"/>
+                            <constraint firstItem="d3h-XT-h2C" firstAttribute="leading" secondItem="vMn-Ty-eWI" secondAttribute="leadingMargin" id="6b3-u4-mBT"/>
+                            <constraint firstItem="d3h-XT-h2C" firstAttribute="trailing" secondItem="vMn-Ty-eWI" secondAttribute="trailingMargin" id="Pde-Lt-eoy"/>
+                            <constraint firstItem="Zo2-vf-HuY" firstAttribute="top" secondItem="d3h-XT-h2C" secondAttribute="bottom" constant="44" id="lYF-tq-xKx"/>
+                            <constraint firstItem="d3h-XT-h2C" firstAttribute="leading" secondItem="Zo2-vf-HuY" secondAttribute="leading" id="riY-xP-64S"/>
+                            <constraint firstItem="d3h-XT-h2C" firstAttribute="top" secondItem="qXy-nj-gcU" secondAttribute="top" constant="85" id="yEj-Vb-3fQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXy-nj-gcU"/>
+                    </view>
+                    <connections>
+                        <outlet property="phone" destination="d3h-XT-h2C" id="l3G-t0-Eja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMW-6Q-D8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="134.1549295774648"/>
+        </scene>
+    </scenes>
+</document>

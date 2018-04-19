@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivh-Ou-kdt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mensaje View Controller-->
+        <scene sceneID="WlX-XC-nqD">
+            <objects>
+                <viewController id="ivh-Ou-kdt" customClass="MensajeViewController" customModule="CallMailMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iQj-KM-W07">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-vh-ypd">
+                                <rect key="frame" x="16" y="91" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-yP-W0C">
+                                <rect key="frame" x="16" y="139" width="343" height="183"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojP-HU-K7E">
+                                <rect key="frame" x="16" y="347" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="enviar mensaje"/>
+                                <connections>
+                                    <action selector="enviar:" destination="ivh-Ou-kdt" eventType="touchUpInside" id="FbJ-SR-zX9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ojP-HU-K7E" firstAttribute="top" secondItem="Ngi-yP-W0C" secondAttribute="bottom" constant="25" id="41w-QO-y0l"/>
+                            <constraint firstItem="K5k-vh-ypd" firstAttribute="trailing" secondItem="iQj-KM-W07" secondAttribute="trailingMargin" id="C00-AI-3L2"/>
+                            <constraint firstItem="Ngi-yP-W0C" firstAttribute="trailing" secondItem="ojP-HU-K7E" secondAttribute="trailing" id="Khf-fB-Ao3"/>
+                            <constraint firstItem="Ngi-yP-W0C" firstAttribute="leading" secondItem="ojP-HU-K7E" secondAttribute="leading" id="Qs9-BQ-TTi"/>
+                            <constraint firstItem="Ngi-yP-W0C" firstAttribute="top" secondItem="K5k-vh-ypd" secondAttribute="bottom" constant="18" id="Wgy-oh-R0M"/>
+                            <constraint firstItem="K5k-vh-ypd" firstAttribute="leading" secondItem="Ngi-yP-W0C" secondAttribute="leading" id="XPd-jb-PNl"/>
+                            <constraint firstItem="K5k-vh-ypd" firstAttribute="trailing" secondItem="Ngi-yP-W0C" secondAttribute="trailing" id="huN-KO-ljj"/>
+                            <constraint firstItem="K5k-vh-ypd" firstAttribute="leading" secondItem="iQj-KM-W07" secondAttribute="leadingMargin" id="npa-sC-dBO"/>
+                            <constraint firstItem="A0W-WR-AV6" firstAttribute="bottom" secondItem="ojP-HU-K7E" secondAttribute="bottom" constant="290" id="rCo-qX-1VR"/>
+                            <constraint firstItem="K5k-vh-ypd" firstAttribute="top" secondItem="A0W-WR-AV6" secondAttribute="top" constant="71" id="sRs-Dk-rkr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0W-WR-AV6"/>
+                    </view>
+                    <connections>
+                        <outlet property="mensaje" destination="Ngi-yP-W0C" id="ZrT-Be-oU5"/>
+                        <outlet property="phone" destination="K5k-vh-ypd" id="kgn-1t-9VY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sw5-ri-r0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.5" y="141.5492957746479"/>
+        </scene>
+    </scenes>
+</document>

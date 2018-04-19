@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,12 @@
 		CF637E6A2010074E00F5DD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF637E682010074E00F5DD50 /* Main.storyboard */; };
 		CF637E6C2010074E00F5DD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF637E6B2010074E00F5DD50 /* Assets.xcassets */; };
 		CF637E6F2010074E00F5DD50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF637E6D2010074E00F5DD50 /* LaunchScreen.storyboard */; };
+		CF637E77201008B100F5DD50 /* Llamada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF637E76201008B100F5DD50 /* Llamada.storyboard */; };
+		CF637E79201008BB00F5DD50 /* Mensaje.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF637E78201008BB00F5DD50 /* Mensaje.storyboard */; };
+		CF637E7B201008C600F5DD50 /* Email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF637E7A201008C600F5DD50 /* Email.storyboard */; };
+		CF637E7F20100C4A00F5DD50 /* LlamadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF637E7E20100C4A00F5DD50 /* LlamadaViewController.swift */; };
+		CF637E8120100E1D00F5DD50 /* MensajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF637E8020100E1D00F5DD50 /* MensajeViewController.swift */; };
+		CF637E832010105900F5DD50 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF637E822010105900F5DD50 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		CF637E6B2010074E00F5DD50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF637E6E2010074E00F5DD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF637E702010074E00F5DD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF637E76201008B100F5DD50 /* Llamada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Llamada.storyboard; sourceTree = "<group>"; };
+		CF637E78201008BB00F5DD50 /* Mensaje.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mensaje.storyboard; sourceTree = "<group>"; };
+		CF637E7A201008C600F5DD50 /* Email.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Email.storyboard; sourceTree = "<group>"; };
+		CF637E7E20100C4A00F5DD50 /* LlamadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamadaViewController.swift; sourceTree = "<group>"; };
+		CF637E8020100E1D00F5DD50 /* MensajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajeViewController.swift; sourceTree = "<group>"; };
+		CF637E822010105900F5DD50 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				CF637E642010074E00F5DD50 /* AppDelegate.swift */,
+				CF637E7E20100C4A00F5DD50 /* LlamadaViewController.swift */,
+				CF637E8020100E1D00F5DD50 /* MensajeViewController.swift */,
+				CF637E822010105900F5DD50 /* EmailViewController.swift */,
 				CF637E662010074E00F5DD50 /* ViewController.swift */,
 				CF637E682010074E00F5DD50 /* Main.storyboard */,
+				CF637E76201008B100F5DD50 /* Llamada.storyboard */,
+				CF637E78201008BB00F5DD50 /* Mensaje.storyboard */,
+				CF637E7A201008C600F5DD50 /* Email.storyboard */,
 				CF637E6B2010074E00F5DD50 /* Assets.xcassets */,
 				CF637E6D2010074E00F5DD50 /* LaunchScreen.storyboard */,
 				CF637E702010074E00F5DD50 /* Info.plist */,
@@ -92,7 +110,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CF637E602010074E00F5DD50 = {
 						CreatedOnToolsVersion = 9.2;
@@ -101,7 +119,7 @@
 				};
 			};
 			buildConfigurationList = CF637E5C2010074E00F5DD50 /* Build configuration list for PBXProject "CallMailMessage" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,7 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF637E79201008BB00F5DD50 /* Mensaje.storyboard in Resources */,
 				CF637E6F2010074E00F5DD50 /* LaunchScreen.storyboard in Resources */,
+				CF637E77201008B100F5DD50 /* Llamada.storyboard in Resources */,
+				CF637E7B201008C600F5DD50 /* Email.storyboard in Resources */,
 				CF637E6C2010074E00F5DD50 /* Assets.xcassets in Resources */,
 				CF637E6A2010074E00F5DD50 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF637E8120100E1D00F5DD50 /* MensajeViewController.swift in Sources */,
 				CF637E672010074E00F5DD50 /* ViewController.swift in Sources */,
 				CF637E652010074E00F5DD50 /* AppDelegate.swift in Sources */,
+				CF637E7F20100C4A00F5DD50 /* LlamadaViewController.swift in Sources */,
+				CF637E832010105900F5DD50 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +240,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,7 +290,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,9 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CallMailMessage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.CallMailMessage;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CallMailMessage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.CallMailMessage;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
